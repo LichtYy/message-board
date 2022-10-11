@@ -1,0 +1,37 @@
+#toolbar {
+    /* background-color: rgb(230, 238, 249); */
+    /* width: 500px; */
+    /* height: 100px; */
+    align-items: center;
+    color: rgba(77, 70, 70, 0.87);
+}
+
+#toolbar>.toolbaritem {
+    /* background-color: rgb(114, 143, 223); */
+    height: fit-content;
+    /* border: 1px solid; */
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 160px;
+    padding-right: 160px;
+
+    /* padding-top: 10px; */
+    /* margin-left: 400px; */
+}
+
+.toolbaritem>a {
+    text-decoration: none;
+    color: inherit;
+    width: inherit;
+    text-align: center;
+}
+
+#toolbar>.first {
+    margin-left: 5px;
+}
+
+#toolbar>.last {
+    margin-right: 5px;
+}
