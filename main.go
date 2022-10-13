@@ -89,10 +89,9 @@ func about(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	fs := http.FileServer(http.Dir("static"))
-	http.Handle("/static/", http.StripPrefix("/static/", fs))
-	http.HandleFunc("/", index)      // 设置访问的路由
-	http.HandleFunc("/login", login) // 设置访问的路由
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("/static")))) // 静态路径配置
+	http.HandleFunc("/", index)                                                                 // 设置访问的路由
+	http.HandleFunc("/login", login)                                                            // 设置访问的路由
 	http.HandleFunc("/account", account)
 	http.HandleFunc("/about", about)
 	err := http.ListenAndServe(":9090", nil) // 设置监听的端口
