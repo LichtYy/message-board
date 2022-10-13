@@ -1,9 +1,3 @@
-// 加载css  必须配静态路径，这样导入不行
-// var toolbarcss = document.createElement("style");
-// toolbarcss.innerHTML = '@import url("toolbar.css");';
-// var dh = document.getElementsByTagName("head")[0];
-// dh.append(toolbarcss);
-
 // 加载工具栏（各个页面都需要）
 var toolbar = document.createElement("div");
 toolbar.setAttribute("id", "toolbar");
