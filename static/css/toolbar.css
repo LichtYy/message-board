@@ -1,0 +1,28 @@
+#toolbar {
+    align-items: center;
+    color: rgba(77, 70, 70, 0.87);
+}
+
+#toolbar>.toolbaritem {
+    height: fit-content;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.toolbaritem>a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+
+#toolbar>.first {
+    margin-left: 5px;
+}
+
+#toolbar>.last {
+    margin-right: 5px;
+}
