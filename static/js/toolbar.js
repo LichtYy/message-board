@@ -5,7 +5,7 @@ var db = document.getElementsByTagName("body")[0];
 db.insertBefore(toolbar, db.firstChild);
 var tbitems = [];
 tbitems.push(document.createElement("div"));
-tbitems[0].innerHTML = '<a href="/index">首页</a>';
+tbitems[0].innerHTML = '<a href="/">首页</a>';
 tbitems[0].setAttribute("class", "toolbaritem first");
 tbitems.push(document.createElement("div"));
 tbitems[1].innerHTML = '<a href="/login">登录</a>';
